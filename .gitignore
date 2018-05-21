@@ -1,0 +1,8 @@
+.externalToolBuilders/
+.settings/
+target/
+.classpath
+.project
+maven-eclipse.xml
+*/logs
+.tern-project

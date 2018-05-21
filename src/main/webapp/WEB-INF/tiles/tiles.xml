@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="layout.basico" template="/WEB-INF/tiles/layout/basico.jsp">
+		<put-attribute name="titulo" value="Burguer" />
+		<put-attribute name="header" value="/WEB-INF/tiles/layout/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/footer.jsp" />
+	</definition>
+
+	<definition name="login.index" extends="layout.basico">
+		<put-attribute name="titulo" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/view/login/login.jsp" />
+	</definition>
+	
+	<definition name="pedido.index" extends="layout.basico">
+		<put-attribute name="titulo" value="Pedido" />
+		<put-attribute name="body" value="/WEB-INF/view/pedido/pedido.jsp" />
+	</definition>
+	
+	<definition name="lista.lanches" template="/WEB-INF/view/pedido/listaLanches.jsp"></definition>
+	
+	<definition name="detalhe.index" extends="layout.basico">
+		<put-attribute name="titulo" value="Detalhe" />
+		<put-attribute name="body" value="/WEB-INF/view/pedido/detalhePedido.jsp" />
+	</definition>
+	
+</tiles-definitions>
